@@ -1,5 +1,5 @@
 {
-	"name": "obsidian-arrows",
+	"name": "arrows",
 	"version": "1.0.0",
 	"description": "A barebone Obsidian plugin that lets you write actual arrow characters without having to copy-paste them.",
 	"main": "main.js",
