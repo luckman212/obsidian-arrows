@@ -1,6 +1,6 @@
 {
-	"id": "obsidian-arrows",
-	"name": "Obsidian Arrows",
+	"id": "arrows",
+	"name": "Arrows",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "A barebone Obsidian plugin that lets you write actual arrow characters without having to copy-paste them.",
