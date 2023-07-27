@@ -41,7 +41,7 @@ A barebone plugin for [Obsidian](https://obsidian.md/) that lets you write actua
 
 Write `->` and it will get replaced by `→`.
 
-You can also use the included "Replace arrows in current file" to replace the arrows in files you created before installing the plugin.
+You can also use the included "Replace arrows in current file" command to replace the arrows in files you created before installing the plugin.
 
 See the [“Usage” section](#usage) for the full list of supported arrows.
 
