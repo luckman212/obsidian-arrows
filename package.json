@@ -1,7 +1,7 @@
 {
 	"name": "arrows",
 	"version": "1.0.0",
-	"description": "A barebone Obsidian plugin that lets you write actual arrow characters without having to copy-paste them.",
+	"description": "Write actual arrow chracters without having to copy-paste them.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",

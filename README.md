@@ -35,7 +35,7 @@
 
 ## About
 
-A barebone plugin for [Obsidian](https://obsidian.md/) that lets you write actual arrow characters without having to copy-paste them.
+Write actual arrow chracters in [Obsidian](https://obsidian.md/) without having to copy-paste them.
 
 ## Features
 
