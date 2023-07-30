@@ -1,6 +1,6 @@
 {
 	"name": "arrows",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Write actual arrow chracters without having to copy-paste them.",
 	"main": "main.js",
 	"scripts": {
