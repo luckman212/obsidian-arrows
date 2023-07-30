@@ -58,7 +58,9 @@ export default class ObsidianArrows extends Plugin {
 
 	onload(): void {
 		console.log("Loading Obsidian Arrows...");
-		this.app.workspace.on("editor-change", this._replaceArrowsInCurrentLine);
+		this.registerEvent(
+			this.app.workspace.on("editor-change", this._replaceArrowsInCurrentLine)
+		);
 
 		this.addCommand({
 			id: "replace-all-arrows",
@@ -66,12 +68,11 @@ export default class ObsidianArrows extends Plugin {
 			mobileOnly: false,
 			editorCallback: this._replaceArrowsInCurrentFile
 		});
+
 		console.log("Loaded Obsidian Arrows.");
 	}
 
 	onunload(): void {
-		console.log("Unloading Obsidian Arrows...");
-		this.app.workspace.off("editor-change", this._replaceArrowsInCurrentLine);
 		console.log("Unloaded Obsidian Arrows.");
 	}
 }
