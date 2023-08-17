@@ -46,9 +46,13 @@ function _replaceArrows(str: string): string {
 export default class ObsidianArrows extends Plugin {
 	private _replaceArrowsInCurrentLine(editor: Editor): void {
 		const currentLineNumber = editor.getCursor().line;
+		const origCursorPos = editor.getCursor('anchor');
 		const currentLineContent = editor.getLine(currentLineNumber);
 		// Only run if there are arrows to be modified
-		if (_hasArrows(currentLineContent)) editor.setLine(currentLineNumber, _replaceArrows(currentLineContent));
+		if (_hasArrows(currentLineContent)) {
+			editor.setLine(currentLineNumber, _replaceArrows(currentLineContent));
+			editor.setCursor(origCursorPos);
+		}
 	}
 
 	private _replaceArrowsInCurrentFile(editor: Editor): void {
